@@ -38,16 +38,17 @@
 (add-hook 'c-mode-common-hook 'my-c-common-mode)
 
 ;; Haskell mode
-(setq exec-path (cons "~/.cabal/bin" exec-path))
-(add-to-list 'load-path "~/.cabal/share/ghc-mod-1.11.0/")
+;(add-to-list 'load-path "~/ghc-mod/elisp/")
+(setq exec-path (cons "/home/egi/ghc-mod/.cabal-sandbox/bin/" exec-path))
 
 (autoload 'ghc-init "ghc" nil t)
-(add-hook 'haskell-mode-hook (lambda () (ghc-init)))
-;(add-hook 'haskell-mode-hook (lambda () (ghc-init) (flymake-mode)))
+;(add-hook 'haskell-mode-hook (lambda () (ghc-init)))
+(add-hook 'haskell-mode-hook (lambda () (ghc-init) (flymake-mode)))
 
 (setq haskell-program-name "/usr/bin/ghci")
 
 ;; Egison mode
+(load-file "~/egison3/elisp/egison-mode.el")
 (autoload 'egison-mode "egison-mode" "Major mode for editing Egison code." t)
 (setq auto-mode-alist
       (cons `("\\.egi$" . egison-mode) auto-mode-alist))
