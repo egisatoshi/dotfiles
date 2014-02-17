@@ -3,7 +3,7 @@ autoload colors
 colors
 
 setup_prompt () {
-PROMPT="%{${fg[yellow]}%}%/%%%{${reset_color}%} "
+PROMPT="%{${fg[cyan]}%}$(echo ${HOST%%.*} | tr '[a-z]' '[A-Z]')%{${reset_color}%} %{${fg[yellow]}%}%/%%%{${reset_color}%} "
 
 autoload -Uz vcs_info
 zstyle ':vcs_info:*' formats '(%s)-[%b]'
