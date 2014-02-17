@@ -3,7 +3,12 @@ autoload colors
 colors
 
 setup_prompt () {
-PROMPT="%{${fg[cyan]}%}$(echo ${HOST%%.*} | tr '[a-z]' '[A-Z]')%{${reset_color}%} %{${fg[yellow]}%}%/%%%{${reset_color}%} "
+
+if [[ -n "${SSH_CONNECTION}" ]]; then
+  PROMPT="%{${fg[cyan]}%}$(echo ${HOST%%.*} | tr '[a-z]' '[A-Z]')%{${reset_color}%} %{${fg[yellow]}%}%/%%%{${reset_color}%} "
+else
+  PROMPT="%{${fg[yellow]}%}%/%%%{${reset_color}%} "
+fi
 
 autoload -Uz vcs_info
 zstyle ':vcs_info:*' formats '(%s)-[%b]'
