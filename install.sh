@@ -1,5 +1,6 @@
 #!/bin/sh
 
-cp .zsh* ~/
+cp .zshenv ~/
+cp .zshrc ~/
 cp .gitconfig ~/
 cp .emacs ~/
