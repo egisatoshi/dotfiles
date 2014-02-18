@@ -50,7 +50,7 @@
 (setq haskell-program-name "/usr/bin/ghci")
 
 ;; Egison mode
-(load-file "~/egison3/elisp/egison-mode.el")
+(load-file "~/egison/elisp/egison-mode.el")
 (autoload 'egison-mode "egison-mode" "Major mode for editing Egison code." t)
 (setq auto-mode-alist
       (cons `("\\.egi$" . egison-mode) auto-mode-alist))
