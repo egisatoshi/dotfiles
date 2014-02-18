@@ -1,12 +1,9 @@
 #language
-LANG=C
-export LANG
+export LC_ALL="en_US.UTF-8"
+export LANG="en_US.UTF-8"
+export LC_CTYPE=ja_JP
 
-LC_CTYPE=ja_JP
-export LC_CTYPE
-
-LISTMAX=0
-export LISTMAX
+export LISTMAX=0
 
 PATH=:/home/egi/.cabal/bin:/home/egi/usr/bin:$PATH
 export PATH
