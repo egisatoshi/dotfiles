@@ -5,7 +5,7 @@ export LC_CTYPE=ja_JP
 
 export LISTMAX=0
 
-PATH=:/home/egi/.cabal/bin:/home/egi/usr/bin:$PATH
+PATH=:/home/egi/egison3/.cabal-sandbox/bin:/home/egi/ghc-mod/.cabal-sandbox/bin:/home/egi/.cabal/bin:/home/egi/usr/bin:$PATH
 export PATH
 
 # EDITOR
