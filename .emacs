@@ -40,11 +40,10 @@
 (add-hook 'c-mode-common-hook 'my-c-common-mode)
 
 ;; Haskell mode
-;(add-to-list 'load-path "~/ghc-mod/elisp/")
-(setq exec-path (cons "/home/egi/ghc-mod/.cabal-sandbox/bin/" exec-path))
+(add-to-list 'load-path "~/ghc-mod/elisp/")
+(setq exec-path (cons "~/ghc-mod/.cabal-sandbox/bin/" exec-path))
 
 (autoload 'ghc-init "ghc" nil t)
-;(add-hook 'haskell-mode-hook (lambda () (ghc-init)))
 (add-hook 'haskell-mode-hook (lambda () (ghc-init) (flymake-mode)))
 
 (setq haskell-program-name "/usr/bin/ghci")
