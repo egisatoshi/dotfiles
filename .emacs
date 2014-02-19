@@ -11,7 +11,7 @@
 (show-paren-mode)
 
 (global-set-key "\C-h" 'delete-backward-char)
-(global-set-key "\C-m" 'newline-and-indent)
+;(global-set-key "\C-m" 'newline-and-indent)
 (global-set-key "\C-j" 'newline)
 (global-set-key "\C-o" 'dabbrev-expand)
 
