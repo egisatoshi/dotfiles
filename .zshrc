@@ -135,7 +135,6 @@ alias la="ls -A"
 alias ll="ls -l"
 
 alias h=history
-alias grep="egrep --color=auto"
 
 alias du="du -h"
 alias df="df -h"
