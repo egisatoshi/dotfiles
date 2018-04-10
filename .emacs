@@ -14,6 +14,8 @@
 ;(global-set-key "\C-m" 'newline-and-indent)
 (global-set-key "\C-j" 'newline)
 (global-set-key "\C-o" 'dabbrev-expand)
+(load-file "~/xah-math-input/xah-math-input.el")
+(global-set-key "\C-q" 'xah-math-input-change-to-symbol)
 
 (global-font-lock-mode t)
 
